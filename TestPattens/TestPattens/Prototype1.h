@@ -51,6 +51,7 @@ namespace Prototype1 {
         virtual ~Tower();
         
         void fire();
+        void upgrade();
         
     private:
         void initBullet();

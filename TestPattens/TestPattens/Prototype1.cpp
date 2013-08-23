@@ -58,6 +58,13 @@ void Tower::initBullet()
     mBullet->mTarget = nullptr;
 }
 
+void Tower::upgrade()
+{
+    mBullet->mSpeed += 100;
+    mBullet->mDamage += 100;
+    std::cout << "Tower upgraded! " << " bullet speed: " << mBullet->mSpeed << " damage: " << mBullet->mDamage << std::endl;
+}
+
 void Tower::fire()
 {
     std::shared_ptr<Bullet> newBullet(mBullet->clone());
@@ -70,6 +77,9 @@ void Client::start()
     std::cout << "Clone1 Start" << std::endl;
     std::shared_ptr<Tower> pTower(new Tower());
     pTower->fire();
+    pTower->upgrade();
+    pTower->fire();
+    pTower->upgrade();
     pTower->fire();
     pTower->fire();
     std::cout << "Clone1 end" << std::endl;
