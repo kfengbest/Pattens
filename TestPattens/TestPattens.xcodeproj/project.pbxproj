@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1274ED3017C78308007D860C /* Prototype1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1274ED2E17C78308007D860C /* Prototype1.cpp */; };
 		12F7E13217C0F46F0040156B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12F7E13117C0F46F0040156B /* main.cpp */; };
 		12F7E13417C0F46F0040156B /* TestPattens.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12F7E13317C0F46F0040156B /* TestPattens.1 */; };
+		12F7E13C17C0F6450040156B /* Visitor1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12F7E13A17C0F6450040156B /* Visitor1.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,9 +27,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1274ED2E17C78308007D860C /* Prototype1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Prototype1.cpp; sourceTree = "<group>"; };
+		1274ED2F17C78308007D860C /* Prototype1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prototype1.h; sourceTree = "<group>"; };
 		12F7E12E17C0F46F0040156B /* TestPattens */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TestPattens; sourceTree = BUILT_PRODUCTS_DIR; };
 		12F7E13117C0F46F0040156B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		12F7E13317C0F46F0040156B /* TestPattens.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = TestPattens.1; sourceTree = "<group>"; };
+		12F7E13A17C0F6450040156B /* Visitor1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Visitor1.cpp; sourceTree = "<group>"; };
+		12F7E13B17C0F6450040156B /* Visitor1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Visitor1.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,10 @@
 			children = (
 				12F7E13117C0F46F0040156B /* main.cpp */,
 				12F7E13317C0F46F0040156B /* TestPattens.1 */,
+				12F7E13A17C0F6450040156B /* Visitor1.cpp */,
+				12F7E13B17C0F6450040156B /* Visitor1.h */,
+				1274ED2E17C78308007D860C /* Prototype1.cpp */,
+				1274ED2F17C78308007D860C /* Prototype1.h */,
 			);
 			path = TestPattens;
 			sourceTree = "<group>";
@@ -118,6 +128,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				12F7E13217C0F46F0040156B /* main.cpp in Sources */,
+				12F7E13C17C0F6450040156B /* Visitor1.cpp in Sources */,
+				1274ED3017C78308007D860C /* Prototype1.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +226,7 @@
 				12F7E13917C0F46F0040156B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
