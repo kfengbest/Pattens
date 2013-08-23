@@ -38,6 +38,33 @@ Bullet* Bullet::clone()
     return new Bullet(*this);
 }
 
+StarBullet::StarBullet()
+: Bullet()
+, mRange(0.0)
+{
+    std::cout << "StarBullet() default: " << " mRange: "  << mRange << std::endl;
+}
+
+StarBullet::~StarBullet()
+{
+    std::cout << "~StarBullet() current: " << " mRange: "  << mRange << std::endl;
+
+}
+
+StarBullet::StarBullet(const StarBullet& rhs)
+: Bullet(rhs)
+, mRange(rhs.mRange)
+{
+    std::cout << "StarBullet() clone: " << " mRange: "  << mRange << std::endl;
+
+}
+
+Bullet* StarBullet::clone()
+{
+    return new StarBullet(*this);
+}
+
+
 Tower::Tower()
 {
     initBullet();
@@ -65,6 +92,18 @@ void Tower::upgrade()
     std::cout << "Tower upgraded! " << " bullet speed: " << mBullet->mSpeed << " damage: " << mBullet->mDamage << std::endl;
 }
 
+void Tower::starBullet()
+{
+    std::shared_ptr<StarBullet> star(new StarBullet);
+    star->mType = "starBullet";
+    star->mSpeed = 1000;
+    star->mDamage = 800;
+    star->mRange = 500;
+    star->mTarget = nullptr;
+    mBullet = star;
+    
+}
+
 void Tower::fire()
 {
     std::shared_ptr<Bullet> newBullet(mBullet->clone());
@@ -78,10 +117,15 @@ void Client::start()
     std::shared_ptr<Tower> pTower(new Tower());
     pTower->fire();
     pTower->upgrade();
+//    pTower->fire();
+//    pTower->upgrade();
+//    pTower->fire();
+    std::cout << "create starBullet" << std::endl;
+    pTower->starBullet();
     pTower->fire();
-    pTower->upgrade();
-    pTower->fire();
-    pTower->fire();
+//    pTower->upgrade();
+//    pTower->fire();
+    
     std::cout << "Clone1 end" << std::endl;
 
 }

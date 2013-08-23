@@ -31,17 +31,32 @@ namespace Prototype1 {
         virtual ~Bullet();
         
         // Prototype pattern;
+        Bullet(const Bullet& rhs);
         virtual Bullet* clone();
         
     private:
         // private constructor for prototype
-        Bullet(const Bullet& rhs);
 
     private:
         std::string mType;
         float mSpeed;
         float mDamage;
         std::shared_ptr<Object> mTarget;
+    };
+    
+    class StarBullet : public Bullet
+    {
+        friend class Tower;
+        
+    public:
+        StarBullet();
+        virtual ~StarBullet();
+        
+        StarBullet(const StarBullet& rhs);
+        virtual Bullet* clone() override;
+        
+    private:
+        float mRange;
     };
     
     class Tower : public Object
@@ -52,6 +67,7 @@ namespace Prototype1 {
         
         void fire();
         void upgrade();
+        void starBullet();
         
     private:
         void initBullet();
