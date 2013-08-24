@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		12409DCE17C8143A002BB2CA /* Strategy1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12409DCC17C8143A002BB2CA /* Strategy1.cpp */; };
+		12409DD117C8331F002BB2CA /* SimpleFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12409DCF17C8331F002BB2CA /* SimpleFactory.cpp */; };
+		12409DD417C83331002BB2CA /* FactoryMethod.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12409DD217C83331002BB2CA /* FactoryMethod.cpp */; };
+		12409DD717C83345002BB2CA /* AbstractFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12409DD517C83345002BB2CA /* AbstractFactory.cpp */; };
 		1274ED3017C78308007D860C /* Prototype1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1274ED2E17C78308007D860C /* Prototype1.cpp */; };
 		1274ED3317C7AA83007D860C /* SmarterPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1274ED3117C7AA83007D860C /* SmarterPoint.cpp */; };
 		12F7E13217C0F46F0040156B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12F7E13117C0F46F0040156B /* main.cpp */; };
@@ -31,6 +34,12 @@
 /* Begin PBXFileReference section */
 		12409DCC17C8143A002BB2CA /* Strategy1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Strategy1.cpp; sourceTree = "<group>"; };
 		12409DCD17C8143A002BB2CA /* Strategy1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Strategy1.h; sourceTree = "<group>"; };
+		12409DCF17C8331F002BB2CA /* SimpleFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleFactory.cpp; sourceTree = "<group>"; };
+		12409DD017C8331F002BB2CA /* SimpleFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleFactory.h; sourceTree = "<group>"; };
+		12409DD217C83331002BB2CA /* FactoryMethod.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FactoryMethod.cpp; sourceTree = "<group>"; };
+		12409DD317C83331002BB2CA /* FactoryMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FactoryMethod.h; sourceTree = "<group>"; };
+		12409DD517C83345002BB2CA /* AbstractFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AbstractFactory.cpp; sourceTree = "<group>"; };
+		12409DD617C83345002BB2CA /* AbstractFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractFactory.h; sourceTree = "<group>"; };
 		1274ED2E17C78308007D860C /* Prototype1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Prototype1.cpp; sourceTree = "<group>"; };
 		1274ED2F17C78308007D860C /* Prototype1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prototype1.h; sourceTree = "<group>"; };
 		1274ED3117C7AA83007D860C /* SmarterPoint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SmarterPoint.cpp; sourceTree = "<group>"; };
@@ -82,6 +91,12 @@
 				1274ED3217C7AA83007D860C /* SmarterPoint.h */,
 				12409DCC17C8143A002BB2CA /* Strategy1.cpp */,
 				12409DCD17C8143A002BB2CA /* Strategy1.h */,
+				12409DCF17C8331F002BB2CA /* SimpleFactory.cpp */,
+				12409DD017C8331F002BB2CA /* SimpleFactory.h */,
+				12409DD217C83331002BB2CA /* FactoryMethod.cpp */,
+				12409DD317C83331002BB2CA /* FactoryMethod.h */,
+				12409DD517C83345002BB2CA /* AbstractFactory.cpp */,
+				12409DD617C83345002BB2CA /* AbstractFactory.h */,
 			);
 			path = TestPattens;
 			sourceTree = "<group>";
@@ -142,6 +157,9 @@
 				1274ED3017C78308007D860C /* Prototype1.cpp in Sources */,
 				1274ED3317C7AA83007D860C /* SmarterPoint.cpp in Sources */,
 				12409DCE17C8143A002BB2CA /* Strategy1.cpp in Sources */,
+				12409DD117C8331F002BB2CA /* SimpleFactory.cpp in Sources */,
+				12409DD417C83331002BB2CA /* FactoryMethod.cpp in Sources */,
+				12409DD717C83345002BB2CA /* AbstractFactory.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
