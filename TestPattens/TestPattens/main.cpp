@@ -10,6 +10,7 @@
 #include "Visitor1.h"
 #include "Prototype1.h"
 #include "SmarterPoint.h"
+#include "Strategy1.h"
 
 
 int main(int argc, const char * argv[])
@@ -29,6 +30,10 @@ int main(int argc, const char * argv[])
     std::cout << "test SmartPointer1 \n";
     SmartPointer1::Client sc;
     sc.start();
+    
+    std::cout << "test Strategy1 \n";
+    Strategy1::Client stc;
+    stc.start();
     
     return 0;
 }

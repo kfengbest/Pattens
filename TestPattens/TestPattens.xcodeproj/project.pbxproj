@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12409DCE17C8143A002BB2CA /* Strategy1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12409DCC17C8143A002BB2CA /* Strategy1.cpp */; };
 		1274ED3017C78308007D860C /* Prototype1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1274ED2E17C78308007D860C /* Prototype1.cpp */; };
 		1274ED3317C7AA83007D860C /* SmarterPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1274ED3117C7AA83007D860C /* SmarterPoint.cpp */; };
 		12F7E13217C0F46F0040156B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12F7E13117C0F46F0040156B /* main.cpp */; };
@@ -28,6 +29,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		12409DCC17C8143A002BB2CA /* Strategy1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Strategy1.cpp; sourceTree = "<group>"; };
+		12409DCD17C8143A002BB2CA /* Strategy1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Strategy1.h; sourceTree = "<group>"; };
 		1274ED2E17C78308007D860C /* Prototype1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Prototype1.cpp; sourceTree = "<group>"; };
 		1274ED2F17C78308007D860C /* Prototype1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prototype1.h; sourceTree = "<group>"; };
 		1274ED3117C7AA83007D860C /* SmarterPoint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SmarterPoint.cpp; sourceTree = "<group>"; };
@@ -77,6 +80,8 @@
 				1274ED2F17C78308007D860C /* Prototype1.h */,
 				1274ED3117C7AA83007D860C /* SmarterPoint.cpp */,
 				1274ED3217C7AA83007D860C /* SmarterPoint.h */,
+				12409DCC17C8143A002BB2CA /* Strategy1.cpp */,
+				12409DCD17C8143A002BB2CA /* Strategy1.h */,
 			);
 			path = TestPattens;
 			sourceTree = "<group>";
@@ -136,6 +141,7 @@
 				12F7E13C17C0F6450040156B /* Visitor1.cpp in Sources */,
 				1274ED3017C78308007D860C /* Prototype1.cpp in Sources */,
 				1274ED3317C7AA83007D860C /* SmarterPoint.cpp in Sources */,
+				12409DCE17C8143A002BB2CA /* Strategy1.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
