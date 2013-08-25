@@ -11,7 +11,7 @@
 
 #include <iostream>
 #include <functional>
-
+#include <vector>
 
 //Using std::function for strategy.
 
@@ -55,6 +55,33 @@ namespace Strategy2 {
         _Func mFunc;
     };
     
+    class Agents{
+        typedef std::function<bool(Node*)> _Func;
+        typedef std::vector<_Func> _Funcs;
+        
+    public:
+        
+        Agents(){}
+        virtual ~Agents(){}
+        
+        // push the strategy
+        void add(const _Func& func){
+            mFuncs.push_back(func);
+        }
+        
+        // run the pipeline.
+        bool visit(Node* node){
+            std::for_each(mFuncs.begin(), mFuncs.end(), [&](const _Func& func){
+                func(node);
+            });
+            return true;
+        }
+        
+    private:
+        _Funcs mFuncs;
+    };
+    
+    
     class Client{
     public:
         void run()
@@ -78,6 +105,7 @@ namespace Strategy2 {
                 return true;
             };
             
+            std::cout << "Now using one Agent \n ";
             Agent agent(print);
             agent.visit(&node);
             
@@ -89,6 +117,18 @@ namespace Strategy2 {
             
             agent.switchTo(print);
             agent.visit(&node);
+            
+            std::cout << "Now using Agents\n ";
+            Agents agents;
+            
+            //config the pipeline.
+            agents.add(print);
+            agents.add(increase);
+            agents.add(rename);
+            agents.add(print);
+            
+            // do the job.
+            agents.visit(&node);
             
         }
     };
