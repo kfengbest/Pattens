@@ -14,7 +14,8 @@
 #include "SimpleFactory.h"
 #include "FactoryMethod.h"
 #include "AbstractFactory.h"
-
+#include "Events1.h"
+#include "Strategy2.h"
 
 int main(int argc, const char * argv[])
 {
@@ -44,6 +45,10 @@ int main(int argc, const char * argv[])
     std::cout << "\n test SimpleFactory2 \n";
     SimpleFactory2::Client sf2c;
     sf2c.start();
+    
+    std::cout << "\n test Events1 \n";
+    Events1::Client dc;
+    dc.start();
     
     return 0;
 }
