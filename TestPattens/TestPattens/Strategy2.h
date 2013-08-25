@@ -127,7 +127,7 @@ namespace Strategy2 {
             agents.add(rename);
             agents.add(print);
             
-            // do the job.
+            // do the job in batch.
             agents.visit(&node);
             
         }
