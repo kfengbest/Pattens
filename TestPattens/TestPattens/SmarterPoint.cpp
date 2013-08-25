@@ -40,7 +40,7 @@ void Background::print()
     std::cout << "void Background::print() \n";
 }
 
-void Client::start()
+void Client::run()
 {
     // OK
     {

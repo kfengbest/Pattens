@@ -35,7 +35,7 @@ namespace Events1 {
     
     class Client{
     public:
-        void start()
+        void run()
         {
             // Init
             Button btn1, btn2;

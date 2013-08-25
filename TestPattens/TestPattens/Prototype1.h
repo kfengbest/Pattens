@@ -79,7 +79,7 @@ namespace Prototype1 {
     class Client
     {
     public:
-        void start();
+        void run();
     };
     
 }

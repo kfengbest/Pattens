@@ -46,7 +46,7 @@ namespace SmartPointer1 {
     class Client
     {
     public:
-        void start();
+        void run();
     };
 }
 

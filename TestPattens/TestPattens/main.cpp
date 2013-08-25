@@ -28,27 +28,27 @@ int main(int argc, const char * argv[])
 
     std::cout << "\n test Prototype1 \n";
     Prototype1::Client pc;
-    pc.start();
+    pc.run();
     
     std::cout << "\n test SmartPointer1 \n";
     SmartPointer1::Client sc;
-    sc.start();
+    sc.run();
     
     std::cout << "\n test Strategy1 \n";
     Strategy1::Client stc;
-    stc.start();
+    stc.run();
     
     std::cout << "\n test SimpleFactory1 \n";
     SimpleFactory1::Client sf1c;
-    sf1c.start();
+    sf1c.run();
     
     std::cout << "\n test SimpleFactory2 \n";
     SimpleFactory2::Client sf2c;
-    sf2c.start();
+    sf2c.run();
     
     std::cout << "\n test Events1 \n";
     Events1::Client dc;
-    dc.start();
+    dc.run();
     
     return 0;
 }

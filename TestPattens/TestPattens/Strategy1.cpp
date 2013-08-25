@@ -134,7 +134,7 @@ void View::onTouchEnd(const Point& point)
     ToolMgr::get()->touchEnd(point);
 }
 
-void Client::start()
+void Client::run()
 {
     View v;
     

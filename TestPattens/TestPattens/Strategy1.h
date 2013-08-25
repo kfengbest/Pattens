@@ -103,7 +103,7 @@ namespace Strategy1 {
     class Client
     {
     public:
-        void start();
+        void run();
     };
     
     //

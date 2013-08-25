@@ -40,7 +40,7 @@ namespace SimpleFactory1{
     
     class Client{
     public:
-        void start()
+        void run()
         {
             GameObjectFactory* fac = new GameObjectFactory();
             Monster* pm1 = fac->createMonster();
@@ -124,7 +124,7 @@ namespace SimpleFactory2{
     
     class Client{
     public:
-        void start()
+        void run()
         {
 
             Item* pm1 = GameObjectFactory::createItem(kMonster);

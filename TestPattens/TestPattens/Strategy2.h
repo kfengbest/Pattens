@@ -13,5 +13,17 @@
 
 //Using std::function for strategy.
 
+namespace Strategy2 {
+    
+    class Node{
+        
+    };
+    
+    class Agent{
+    
+        
+    };
+    
+}
 
 #endif /* defined(__TestPattens__Strategy2__) */

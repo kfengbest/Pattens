@@ -111,7 +111,7 @@ void Tower::fire()
     // gameLayer->addChild(newBullet);
 }
 
-void Client::start()
+void Client::run()
 {
     std::cout << "Clone1 Start" << std::endl;
     std::shared_ptr<Tower> pTower(new Tower());
