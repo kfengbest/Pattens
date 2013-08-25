@@ -21,32 +21,36 @@ int main(int argc, const char * argv[])
 {
 
     // insert code here...
-    std::cout << "\n test Visitor1\n";
+    std::cout << "\n ===test Visitor1\n";
     Visitor1::Client c1;
     c1.buildObjects();
     c1.save();
 
-    std::cout << "\n test Prototype1 \n";
+    std::cout << "\n ===test Prototype1 \n";
     Prototype1::Client pc;
     pc.run();
     
-    std::cout << "\n test SmartPointer1 \n";
+    std::cout << "\n ===test SmartPointer1 \n";
     SmartPointer1::Client sc;
     sc.run();
     
-    std::cout << "\n test Strategy1 \n";
+    std::cout << "\n ===test Strategy1 \n";
     Strategy1::Client stc;
     stc.run();
     
-    std::cout << "\n test SimpleFactory1 \n";
+    std::cout << "\n ===test Strategy2 \n";
+    Strategy2::Client stc2;
+    stc2.run();
+    
+    std::cout << "\n ===test SimpleFactory1 \n";
     SimpleFactory1::Client sf1c;
     sf1c.run();
     
-    std::cout << "\n test SimpleFactory2 \n";
+    std::cout << "\n ===test SimpleFactory2 \n";
     SimpleFactory2::Client sf2c;
     sf2c.run();
     
-    std::cout << "\n test Events1 \n";
+    std::cout << "\n ===test Events1 \n";
     Events1::Client dc;
     dc.run();
     
