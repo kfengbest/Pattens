@@ -20,6 +20,7 @@
 		12AF509117C99F3E001DA6CD /* Events3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12AF508F17C99F3D001DA6CD /* Events3.cpp */; };
 		12AF509417C99F5A001DA6CD /* OGS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12AF509217C99F5A001DA6CD /* OGS.cpp */; };
 		12AF509817C9C4A9001DA6CD /* Visitor2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12AF509617C9C4A8001DA6CD /* Visitor2.cpp */; };
+		12AF509C17C9F7D5001DA6CD /* Behavior.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12AF509A17C9F7D5001DA6CD /* Behavior.cpp */; };
 		12F7E13217C0F46F0040156B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12F7E13117C0F46F0040156B /* main.cpp */; };
 		12F7E13417C0F46F0040156B /* TestPattens.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12F7E13317C0F46F0040156B /* TestPattens.1 */; };
 		12F7E13C17C0F6450040156B /* Visitor1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12F7E13A17C0F6450040156B /* Visitor1.cpp */; };
@@ -65,6 +66,8 @@
 		12AF509317C99F5A001DA6CD /* OGS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGS.h; sourceTree = "<group>"; };
 		12AF509617C9C4A8001DA6CD /* Visitor2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Visitor2.cpp; sourceTree = "<group>"; };
 		12AF509717C9C4A9001DA6CD /* Visitor2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Visitor2.h; sourceTree = "<group>"; };
+		12AF509A17C9F7D5001DA6CD /* Behavior.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Behavior.cpp; sourceTree = "<group>"; };
+		12AF509B17C9F7D5001DA6CD /* Behavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Behavior.h; sourceTree = "<group>"; };
 		12F7E12E17C0F46F0040156B /* TestPattens */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TestPattens; sourceTree = BUILT_PRODUCTS_DIR; };
 		12F7E13117C0F46F0040156B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		12F7E13317C0F46F0040156B /* TestPattens.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = TestPattens.1; sourceTree = "<group>"; };
@@ -132,6 +135,8 @@
 				12AF509317C99F5A001DA6CD /* OGS.h */,
 				1255414417C9D64900B94DE3 /* Flyweight.cpp */,
 				1255414517C9D64900B94DE3 /* Flyweight.h */,
+				12AF509A17C9F7D5001DA6CD /* Behavior.cpp */,
+				12AF509B17C9F7D5001DA6CD /* Behavior.h */,
 			);
 			path = TestPattens;
 			sourceTree = "<group>";
@@ -202,6 +207,7 @@
 				12AF509417C99F5A001DA6CD /* OGS.cpp in Sources */,
 				12AF509817C9C4A9001DA6CD /* Visitor2.cpp in Sources */,
 				1255414617C9D64900B94DE3 /* Flyweight.cpp in Sources */,
+				12AF509C17C9F7D5001DA6CD /* Behavior.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
