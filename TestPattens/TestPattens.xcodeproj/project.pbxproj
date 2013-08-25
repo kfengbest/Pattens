@@ -11,6 +11,7 @@
 		12409DD117C8331F002BB2CA /* SimpleFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12409DCF17C8331F002BB2CA /* SimpleFactory.cpp */; };
 		12409DD417C83331002BB2CA /* FactoryMethod.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12409DD217C83331002BB2CA /* FactoryMethod.cpp */; };
 		12409DD717C83345002BB2CA /* AbstractFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12409DD517C83345002BB2CA /* AbstractFactory.cpp */; };
+		1255414617C9D64900B94DE3 /* Flyweight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1255414417C9D64900B94DE3 /* Flyweight.cpp */; };
 		1274ED3017C78308007D860C /* Prototype1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1274ED2E17C78308007D860C /* Prototype1.cpp */; };
 		1274ED3317C7AA83007D860C /* SmarterPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1274ED3117C7AA83007D860C /* SmarterPoint.cpp */; };
 		12AF508817C999EE001DA6CD /* Events1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12AF508617C999EE001DA6CD /* Events1.cpp */; };
@@ -18,6 +19,7 @@
 		12AF508E17C99F30001DA6CD /* Events2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12AF508C17C99F30001DA6CD /* Events2.cpp */; };
 		12AF509117C99F3E001DA6CD /* Events3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12AF508F17C99F3D001DA6CD /* Events3.cpp */; };
 		12AF509417C99F5A001DA6CD /* OGS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12AF509217C99F5A001DA6CD /* OGS.cpp */; };
+		12AF509817C9C4A9001DA6CD /* Visitor2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12AF509617C9C4A8001DA6CD /* Visitor2.cpp */; };
 		12F7E13217C0F46F0040156B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12F7E13117C0F46F0040156B /* main.cpp */; };
 		12F7E13417C0F46F0040156B /* TestPattens.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12F7E13317C0F46F0040156B /* TestPattens.1 */; };
 		12F7E13C17C0F6450040156B /* Visitor1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12F7E13A17C0F6450040156B /* Visitor1.cpp */; };
@@ -45,6 +47,8 @@
 		12409DD317C83331002BB2CA /* FactoryMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FactoryMethod.h; sourceTree = "<group>"; };
 		12409DD517C83345002BB2CA /* AbstractFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AbstractFactory.cpp; sourceTree = "<group>"; };
 		12409DD617C83345002BB2CA /* AbstractFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractFactory.h; sourceTree = "<group>"; };
+		1255414417C9D64900B94DE3 /* Flyweight.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Flyweight.cpp; sourceTree = "<group>"; };
+		1255414517C9D64900B94DE3 /* Flyweight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flyweight.h; sourceTree = "<group>"; };
 		1274ED2E17C78308007D860C /* Prototype1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Prototype1.cpp; sourceTree = "<group>"; };
 		1274ED2F17C78308007D860C /* Prototype1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prototype1.h; sourceTree = "<group>"; };
 		1274ED3117C7AA83007D860C /* SmarterPoint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SmarterPoint.cpp; sourceTree = "<group>"; };
@@ -59,6 +63,8 @@
 		12AF509017C99F3D001DA6CD /* Events3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Events3.h; sourceTree = "<group>"; };
 		12AF509217C99F5A001DA6CD /* OGS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OGS.cpp; sourceTree = "<group>"; };
 		12AF509317C99F5A001DA6CD /* OGS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGS.h; sourceTree = "<group>"; };
+		12AF509617C9C4A8001DA6CD /* Visitor2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Visitor2.cpp; sourceTree = "<group>"; };
+		12AF509717C9C4A9001DA6CD /* Visitor2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Visitor2.h; sourceTree = "<group>"; };
 		12F7E12E17C0F46F0040156B /* TestPattens */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TestPattens; sourceTree = BUILT_PRODUCTS_DIR; };
 		12F7E13117C0F46F0040156B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		12F7E13317C0F46F0040156B /* TestPattens.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = TestPattens.1; sourceTree = "<group>"; };
@@ -100,6 +106,8 @@
 				12F7E13317C0F46F0040156B /* TestPattens.1 */,
 				12F7E13A17C0F6450040156B /* Visitor1.cpp */,
 				12F7E13B17C0F6450040156B /* Visitor1.h */,
+				12AF509617C9C4A8001DA6CD /* Visitor2.cpp */,
+				12AF509717C9C4A9001DA6CD /* Visitor2.h */,
 				1274ED2E17C78308007D860C /* Prototype1.cpp */,
 				1274ED2F17C78308007D860C /* Prototype1.h */,
 				1274ED3117C7AA83007D860C /* SmarterPoint.cpp */,
@@ -122,6 +130,8 @@
 				12AF509017C99F3D001DA6CD /* Events3.h */,
 				12AF509217C99F5A001DA6CD /* OGS.cpp */,
 				12AF509317C99F5A001DA6CD /* OGS.h */,
+				1255414417C9D64900B94DE3 /* Flyweight.cpp */,
+				1255414517C9D64900B94DE3 /* Flyweight.h */,
 			);
 			path = TestPattens;
 			sourceTree = "<group>";
@@ -190,6 +200,8 @@
 				12AF508E17C99F30001DA6CD /* Events2.cpp in Sources */,
 				12AF509117C99F3E001DA6CD /* Events3.cpp in Sources */,
 				12AF509417C99F5A001DA6CD /* OGS.cpp in Sources */,
+				12AF509817C9C4A9001DA6CD /* Visitor2.cpp in Sources */,
+				1255414617C9D64900B94DE3 /* Flyweight.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

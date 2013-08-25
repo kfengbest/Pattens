@@ -16,6 +16,7 @@
 #include "AbstractFactory.h"
 #include "Events1.h"
 #include "Strategy2.h"
+#include "Flyweight.h"
 
 int main(int argc, const char * argv[])
 {
@@ -53,6 +54,10 @@ int main(int argc, const char * argv[])
     std::cout << "\n ===test Events1 \n";
     Events1::Client dc;
     dc.run();
+    
+    std::cout << "\n ===test Flyweight \n";
+    Flyweight1::Client fwc;
+    fwc.run();
     
     return 0;
 }
