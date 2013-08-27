@@ -18,7 +18,7 @@
 #include "Strategy2.h"
 #include "Flyweight.h"
 #include "Interfaces1.h"
-
+#include "Interfaces2.h"
 
 int main(int argc, const char * argv[])
 {
@@ -61,9 +61,14 @@ int main(int argc, const char * argv[])
     Flyweight1::Client fwc;
     fwc.run();
 
-    std::cout << "\n ===test Interfaces \n";
-    Interfaces1::Client itf1;
-    itf1.run();
+//    std::cout << "\n ===test Interfaces1 \n";
+//    Interfaces1::Client itf1;
+//    itf1.run();
+    
+    std::cout << "\n ===test Interfaces2 \n";
+    Interfaces2::Client itf2;
+    itf2.run();
+    
     
     return 0;
 }
