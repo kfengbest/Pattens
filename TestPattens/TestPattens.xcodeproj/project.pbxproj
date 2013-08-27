@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1224B12C17CCBF9B00A6365C /* Interfaces1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1224B12A17CCBF9B00A6365C /* Interfaces1.cpp */; };
 		1224B12F17CCE7BA00A6365C /* Interfaces2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1224B12D17CCE7BA00A6365C /* Interfaces2.cpp */; };
+		1224B13217CCFC6500A6365C /* Interfaces3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1224B13017CCFC6500A6365C /* Interfaces3.cpp */; };
 		12409DCE17C8143A002BB2CA /* Strategy1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12409DCC17C8143A002BB2CA /* Strategy1.cpp */; };
 		12409DD117C8331F002BB2CA /* SimpleFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12409DCF17C8331F002BB2CA /* SimpleFactory.cpp */; };
 		12409DD417C83331002BB2CA /* FactoryMethod.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12409DD217C83331002BB2CA /* FactoryMethod.cpp */; };
@@ -47,6 +48,8 @@
 		1224B12B17CCBF9B00A6365C /* Interfaces1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Interfaces1.h; sourceTree = "<group>"; };
 		1224B12D17CCE7BA00A6365C /* Interfaces2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Interfaces2.cpp; sourceTree = "<group>"; };
 		1224B12E17CCE7BA00A6365C /* Interfaces2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Interfaces2.h; sourceTree = "<group>"; };
+		1224B13017CCFC6500A6365C /* Interfaces3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Interfaces3.cpp; sourceTree = "<group>"; };
+		1224B13117CCFC6500A6365C /* Interfaces3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Interfaces3.h; sourceTree = "<group>"; };
 		12409DCC17C8143A002BB2CA /* Strategy1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Strategy1.cpp; sourceTree = "<group>"; };
 		12409DCD17C8143A002BB2CA /* Strategy1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Strategy1.h; sourceTree = "<group>"; };
 		12409DCF17C8331F002BB2CA /* SimpleFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleFactory.cpp; sourceTree = "<group>"; };
@@ -152,6 +155,8 @@
 				1224B12B17CCBF9B00A6365C /* Interfaces1.h */,
 				1224B12D17CCE7BA00A6365C /* Interfaces2.cpp */,
 				1224B12E17CCE7BA00A6365C /* Interfaces2.h */,
+				1224B13017CCFC6500A6365C /* Interfaces3.cpp */,
+				1224B13117CCFC6500A6365C /* Interfaces3.h */,
 			);
 			path = TestPattens;
 			sourceTree = "<group>";
@@ -226,6 +231,7 @@
 				12AF509F17CA070A001DA6CD /* Tasks.cpp in Sources */,
 				1224B12C17CCBF9B00A6365C /* Interfaces1.cpp in Sources */,
 				1224B12F17CCE7BA00A6365C /* Interfaces2.cpp in Sources */,
+				1224B13217CCFC6500A6365C /* Interfaces3.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

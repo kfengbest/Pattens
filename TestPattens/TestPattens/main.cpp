@@ -19,6 +19,7 @@
 #include "Flyweight.h"
 #include "Interfaces1.h"
 #include "Interfaces2.h"
+#include "Interfaces3.h"
 
 int main(int argc, const char * argv[])
 {
@@ -69,6 +70,9 @@ int main(int argc, const char * argv[])
     Interfaces2::Client itf2;
     itf2.run();
     
+    std::cout << "\n ===test Interfaces3 \n";
+    Interfaces3::Client itf3;
+    itf3.run();
     
     return 0;
 }
