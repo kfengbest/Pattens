@@ -8,6 +8,7 @@
 
 #include <iostream>
 #include "Visitor1.h"
+#include "Visitor2.h"
 #include "Prototype1.h"
 #include "SmarterPoint.h"
 #include "Strategy1.h"
@@ -20,6 +21,7 @@
 #include "Interfaces1.h"
 #include "Interfaces2.h"
 #include "Interfaces3.h"
+#include "Compositor1.h"
 
 int main(int argc, const char * argv[])
 {
@@ -73,6 +75,20 @@ int main(int argc, const char * argv[])
     std::cout << "\n ===test Interfaces3 \n";
     Interfaces3::Client itf3;
     itf3.run();
+    
+    std::cout << "\n ===test Visitor2::V1 \n";
+    Visitor2::V1::Client vzc2;
+    vzc2.run();
+    
+    std::cout << "\n ===test Visitor2::V2 \n";
+    Visitor2::V2::Client vzcv2;
+    vzcv2.run();
+    
+    std::cout << "\n ===test Compositor1 \n";
+    Compositor1::Client comv1;
+    comv1.run();
+    
+
     
     return 0;
 }

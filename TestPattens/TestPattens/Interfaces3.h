@@ -150,7 +150,8 @@ namespace Interfaces3 {
             }
 
             pObj = pPer;
-            PerformanceTest(pObj);
+            //PerformanceTest(pObj);
+           
             delete pAni;
             delete pPer;
         }
