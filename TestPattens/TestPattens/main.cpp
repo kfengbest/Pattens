@@ -9,6 +9,7 @@
 #include <iostream>
 #include "Visitor1.h"
 #include "Visitor2.h"
+#include "Visitor3.h"
 #include "Prototype1.h"
 #include "SmarterPoint.h"
 #include "Strategy1.h"
@@ -84,10 +85,14 @@ int main(int argc, const char * argv[])
     Visitor2::V2::Client vzcv2;
     vzcv2.run();
     
+    
     std::cout << "\n ===test Compositor1 \n";
     Compositor1::Client comv1;
     comv1.run();
     
+    std::cout << "\n ===test Visitor3 \n";
+    Visitor3::Client vz3;
+    vz3.run();
 
     
     return 0;

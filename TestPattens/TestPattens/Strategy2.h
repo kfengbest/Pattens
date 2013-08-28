@@ -34,6 +34,7 @@ namespace Strategy2 {
         int mType;
     };
     
+    // Visitor + Strategy
     class Agent{
         typedef std::function<bool(Node*)> _Func;
         
@@ -52,7 +53,7 @@ namespace Strategy2 {
         }
         
     private:
-        _Func mFunc;
+        _Func mFunc;  // use function as strategy
     };
     
     class Agents{
