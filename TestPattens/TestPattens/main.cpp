@@ -23,6 +23,9 @@
 #include "Interfaces2.h"
 #include "Interfaces3.h"
 #include "Compositor1.h"
+#include "Decorator1.h"
+
+
 
 int main(int argc, const char * argv[])
 {
@@ -94,6 +97,9 @@ int main(int argc, const char * argv[])
     Visitor3::Client vz3;
     vz3.run();
 
+    std::cout << "\n ===test Decorator1 \n";
+    Decorator1::Client dcc1;
+    dcc1.run();
     
     return 0;
 }
