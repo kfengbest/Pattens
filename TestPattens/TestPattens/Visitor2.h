@@ -128,19 +128,26 @@ namespace  V1{
         class Visitor;
         class LeafNode;
         class GroupNode;
+        class Monster;
         
         class Visitor{
         public:
             virtual ~Visitor(){}
             
             virtual void onVisit(Node* node){
-                std::cout << "Visitor::onVisit(Node)";
+                std::cout << "Visitor::onVisit(Node) \n";
             }
             virtual void onVisit(LeafNode* node){
-                std::cout << "Visitor::onVisit(LeafNode)";
+                std::cout << "Visitor::onVisit(LeafNode) \n";
             }
             virtual void onVisit(GroupNode* node){
-                std::cout << "Visitor::onVisit(GroupNode)";
+                std::cout << "Visitor::onVisit(GroupNode) \n";
+            }
+            
+            //Changes 3 Node type changed:
+            //step 2 added a new method here.
+            virtual void onVisit(Monster* node){
+                std::cout << "Visitor::onVisit(Monster) \n";
             }
 
         };
@@ -178,6 +185,8 @@ namespace  V1{
             
         public:
             // Visitor实现一： 遍历逻辑封装在Node中，Visitor只负责操作，责任清晰。
+            // 优点： 如果只是增加一种新的对node的访问方式，只需要派生一个新的Visitor就行。
+            // 缺点： 如果增加了一种node的类型，需要修改所有visitor类。
             virtual void accept(Visitor* viz) override {
 
                 // Visit myself firstly.
@@ -193,7 +202,18 @@ namespace  V1{
             Nodes mNodes;
         };
         
-
+        // Changes 3 Node type changed:
+        // step 1, define a new node type.
+        class Monster : public LeafNode{
+        public:
+            Monster(const std::string& name) : LeafNode(name){}
+            virtual ~Monster(){}
+            
+            virtual void accept(Visitor* v){
+                v->onVisit(this);
+            }
+        };
+        
         class SaveVisitor : public Visitor{
         public:
             virtual ~SaveVisitor(){}
@@ -201,16 +221,28 @@ namespace  V1{
             virtual void onVisit(Node* node){std::cout << "SaveVisitor::onVisit(Node) " << node->name() << std::endl;}
             virtual void onVisit(LeafNode* node){std::cout << "SaveVisitor::onVisit(LeafNode)" << node->name() << std::endl;}
             virtual void onVisit(GroupNode* node){std::cout << "SaveVisitor::onVisit(GroupNode)" << node->name() << std::endl;}
-            
+            // Change 3 Node type changed.
+            // Step 3: implement onVisit on concrete Visitor.
+            virtual void onVisit(Monster* node){std::cout << "SaveVisitor::onVisit(Monster)" << node->name() << std::endl;}
+
         };
         
         class LoadVisitor : public Visitor{
         public:
             virtual ~LoadVisitor(){}
-            virtual void onVisit(Node* node){std::cout << "LoadVisitor::onVisit(Node)";}
-            virtual void onVisit(LeafNode* node){std::cout << "LoadVisitor::onVisit(LeafNode)";}
-            virtual void onVisit(GroupNode* node){std::cout << "LoadVisitor::onVisit(GroupNode)";}
-            
+            virtual void onVisit(Node* node){std::cout << "LoadVisitor::onVisit(Node) "<< node->name() << std::endl;}
+            virtual void onVisit(LeafNode* node){std::cout << "LoadVisitor::onVisit(LeafNode) "<< node->name() << std::endl;}
+            virtual void onVisit(GroupNode* node){std::cout << "LoadVisitor::onVisit(GroupNode) "<< node->name() << std::endl;}
+        };
+        
+        // Change 1: add a new operation.
+        // step 1: just need to inherited from Visitor, that's enough.
+        class SelectVisitor : public Visitor{
+        public:
+            virtual ~SelectVisitor(){}
+            virtual void onVisit(Node* node){std::cout << "SelectVisitor::onVisit(Node) "<< node->name() << std::endl;}
+            virtual void onVisit(LeafNode* node){std::cout << "SelectVisitor::onVisit(LeafNode) "<< node->name() << std::endl;}
+            virtual void onVisit(GroupNode* node){std::cout << "SelectVisitor::onVisit(GroupNode) "<< node->name() << std::endl;}
         };
         
         
@@ -231,7 +263,25 @@ namespace  V1{
                 SaveVisitor saver;
                 root->accept(&saver);
                 
+                LoadVisitor loader;
+                root->accept(&loader);
                 
+                // Change 1, step 2: invoke.
+                SelectVisitor selector;
+                root->accept(&selector);
+                
+                // Changes 2. only structure changed.
+                std::shared_ptr<GroupNode> mons(new GroupNode("mons"));
+                std::shared_ptr<Monster> mon1(new Monster("mon1"));
+                std::shared_ptr<Monster> mon2(new Monster("mon2"));
+                doc->add(mons);
+                mons->add(mon1);
+                mons->add(mon2);
+                
+                root->accept(&saver);
+                root->accept(&loader);
+
+
             }
         };
         
