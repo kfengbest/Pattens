@@ -15,10 +15,21 @@ namespace Decorator1 {
     
     class Tower{
     public:
+        Tower() : mDamage(10), mSpeed(100){}
         virtual ~Tower(){}
-        virtual void fire(){ std::cout << "Tower::fire() \n";}
+        virtual void fire(){
+            std::cout << "Tower::fire() " << " damage: " << this->damage()
+                                          << " speed: " << this->speed() << std::endl;
+        }
+        
+        virtual int damage() const{return mDamage;}
+        virtual int speed() const{return mSpeed;}
+
+    protected:
+        int mDamage;
+        int mSpeed;
     };
-    
+
     class Behavior : public Tower{
     public:
         Behavior(Tower* t) : Tower(), mTower(t){}
@@ -32,14 +43,21 @@ namespace Decorator1 {
     
     class Slow : public Behavior{
     public:
-        Slow(Tower* t) : Behavior(t){}
+        Slow(Tower* t) : Behavior(t), mSlowDamage(2){}
         virtual ~Slow(){}
         
         virtual void fire() override {
-            std::cout << "Slow::fire() \n";
+            std::cout << "Slow::fire()" << " damage: " << this->damage()
+            << " speed: " << this->speed() << std::endl;
             mTower->fire();
         }
-
+        
+        virtual int damage() const override {
+            return mDamage - mSlowDamage;
+        }
+    
+    private:
+        int mSlowDamage;
     };
     
     class Freeze : public Behavior{
@@ -48,9 +66,14 @@ namespace Decorator1 {
         virtual ~Freeze(){}
         
         virtual void fire() override {
-            std::cout << "Freeze::fire() \n";
+            std::cout << "Freeze::fire()" << " damage: " << this->damage()
+            << " speed: " << this->speed() << std::endl;
+            
             mTower->fire();
         }
+        
+        virtual int speed() const{return mSpeed  - 10 ;}
+
     };
     
     class Small : public Behavior{

@@ -17,6 +17,8 @@
 #include "FactoryMethod.h"
 #include "AbstractFactory.h"
 #include "Events1.h"
+#include "Events2.h"
+#include "Events3.h"
 #include "Strategy2.h"
 #include "Flyweight.h"
 #include "Interfaces1.h"
@@ -100,6 +102,11 @@ int main(int argc, const char * argv[])
     std::cout << "\n ===test Decorator1 \n";
     Decorator1::Client dcc1;
     dcc1.run();
+    
+    std::cout << "\n ===test Event2 \n";
+    Event3::Client ev3;
+    ev3.run();
+    
     
     return 0;
 }
