@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		12206D0017D166B200BF745B /* Visitor4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12206CFE17D166B200BF745B /* Visitor4.cpp */; };
+		12206D1417D1926C00BF745B /* Adaptor1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12206D1217D1926C00BF745B /* Adaptor1.cpp */; };
+		12206D1717D1931300BF745B /* Bridge1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12206D1517D1931300BF745B /* Bridge1.cpp */; };
 		1224B12C17CCBF9B00A6365C /* Interfaces1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1224B12A17CCBF9B00A6365C /* Interfaces1.cpp */; };
 		1224B12F17CCE7BA00A6365C /* Interfaces2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1224B12D17CCE7BA00A6365C /* Interfaces2.cpp */; };
 		1224B13217CCFC6500A6365C /* Interfaces3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1224B13017CCFC6500A6365C /* Interfaces3.cpp */; };
@@ -50,6 +52,10 @@
 /* Begin PBXFileReference section */
 		12206CFE17D166B200BF745B /* Visitor4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Visitor4.cpp; sourceTree = "<group>"; };
 		12206CFF17D166B200BF745B /* Visitor4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Visitor4.h; sourceTree = "<group>"; };
+		12206D1217D1926C00BF745B /* Adaptor1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Adaptor1.cpp; sourceTree = "<group>"; };
+		12206D1317D1926C00BF745B /* Adaptor1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Adaptor1.h; sourceTree = "<group>"; };
+		12206D1517D1931300BF745B /* Bridge1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bridge1.cpp; sourceTree = "<group>"; };
+		12206D1617D1931300BF745B /* Bridge1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bridge1.h; sourceTree = "<group>"; };
 		1224B12A17CCBF9B00A6365C /* Interfaces1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Interfaces1.cpp; sourceTree = "<group>"; };
 		1224B12B17CCBF9B00A6365C /* Interfaces1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Interfaces1.h; sourceTree = "<group>"; };
 		1224B12D17CCE7BA00A6365C /* Interfaces2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Interfaces2.cpp; sourceTree = "<group>"; };
@@ -177,6 +183,10 @@
 				1224B13417CD70C300A6365C /* Compositor1.h */,
 				1224B13A17CDB8B500A6365C /* Decorator1.cpp */,
 				1224B13B17CDB8B600A6365C /* Decorator1.h */,
+				12206D1217D1926C00BF745B /* Adaptor1.cpp */,
+				12206D1317D1926C00BF745B /* Adaptor1.h */,
+				12206D1517D1931300BF745B /* Bridge1.cpp */,
+				12206D1617D1931300BF745B /* Bridge1.h */,
 			);
 			path = TestPattens;
 			sourceTree = "<group>";
@@ -256,6 +266,8 @@
 				1224B13817CDA19500A6365C /* Visitor3.cpp in Sources */,
 				1224B13C17CDB8B600A6365C /* Decorator1.cpp in Sources */,
 				12206D0017D166B200BF745B /* Visitor4.cpp in Sources */,
+				12206D1417D1926C00BF745B /* Adaptor1.cpp in Sources */,
+				12206D1717D1931300BF745B /* Bridge1.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

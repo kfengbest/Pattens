@@ -27,6 +27,7 @@
 #include "Interfaces3.h"
 #include "Compositor1.h"
 #include "Decorator1.h"
+#include "Adaptor1.h"
 
 
 
@@ -111,6 +112,10 @@ int main(int argc, const char * argv[])
     std::cout << "\n ===test Visitor4 \n";
     Visitor4::Client viz4;
     viz4.run();
+
+    std::cout << "\n ===test Adaptor1 \n";
+    Adaptor1::Client adt1;
+    adt1.run();
     
     return 0;
 }
