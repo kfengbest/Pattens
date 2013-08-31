@@ -10,6 +10,7 @@
 #include "Visitor1.h"
 #include "Visitor2.h"
 #include "Visitor3.h"
+#include "Visitor4.h"
 #include "Prototype1.h"
 #include "SmarterPoint.h"
 #include "Strategy1.h"
@@ -107,6 +108,9 @@ int main(int argc, const char * argv[])
     Event3::Client ev3;
     ev3.run();
     
+    std::cout << "\n ===test Visitor4 \n";
+    Visitor4::Client viz4;
+    viz4.run();
     
     return 0;
 }

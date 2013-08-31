@@ -58,7 +58,6 @@ namespace Event3 {
         virtual void onTouchBegin(TouchEvent* pEvent){ std::cout << "EventSite1::onTouchBegin \n";}
         virtual void onTouchMove(TouchEvent* pEvent){ std::cout << "EventSite1::onTouchMove \n";}
         virtual void onTouchEnd(TouchEvent* pEvent){ std::cout << "EventSite1::onTouchEnd \n";}
-
     };
     
     class TouchEventSource : public EventSource{
@@ -80,7 +79,7 @@ namespace Event3 {
     public:
         void begin(){TouchEventSource::get()->subscribe(this);}
         void end(){TouchEventSource::get()->unsubscribe(this);}
-        
+    protected:
         virtual void onTouchBegin(TouchEvent* pEvent){ std::cout << "Window::onTouchBegin \n";}
         virtual void onTouchMove(TouchEvent* pEvent){ std::cout << "Window::onTouchMove \n";}
         virtual void onTouchEnd(TouchEvent* pEvent){ std::cout << "Window::onTouchEnd \n";}

@@ -14,6 +14,7 @@
 #include <vector>
 #include <memory>
 
+// Visitro + Strategy using funciton
 namespace Visitor3 {
     
     class Node;
