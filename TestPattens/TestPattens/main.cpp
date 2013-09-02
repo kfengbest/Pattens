@@ -14,13 +14,14 @@
 #include "Prototype1.h"
 #include "SmarterPoint.h"
 #include "Strategy1.h"
+#include "Strategy2.h"
+#include "Strategy3.h"
 #include "SimpleFactory.h"
 #include "FactoryMethod.h"
 #include "AbstractFactory.h"
 #include "Events1.h"
 #include "Events2.h"
 #include "Events3.h"
-#include "Strategy2.h"
 #include "Flyweight.h"
 #include "Interfaces1.h"
 #include "Interfaces2.h"
@@ -116,6 +117,10 @@ int main(int argc, const char * argv[])
     std::cout << "\n ===test Adaptor1 \n";
     Adaptor1::Client adt1;
     adt1.run();
+
+    std::cout << "\n ===test Stategy2 \n";
+    Strategy3::Client st3;
+    st3.run();
     
     return 0;
 }
