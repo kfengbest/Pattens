@@ -22,6 +22,7 @@
 #include "Events1.h"
 #include "Events2.h"
 #include "Events3.h"
+#include "Events4.h"
 #include "Flyweight.h"
 #include "Interfaces1.h"
 #include "Interfaces2.h"
@@ -121,6 +122,10 @@ int main(int argc, const char * argv[])
     std::cout << "\n ===test Stategy2 \n";
     Strategy3::Client st3;
     st3.run();
+    
+    std::cout << "\n ===test Event4 \n";
+    Events4::Client ev4;
+    ev4.run();
     
     return 0;
 }
